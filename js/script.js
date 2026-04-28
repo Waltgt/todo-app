@@ -46,6 +46,7 @@ function crearTarea(texto, completada = false) {
 
     li.addEventListener('click', () => {
         li.classList.toggle('completada');
+        guardarLocalStorage();
     });
 
     const eliminar = document.createElement('span');
